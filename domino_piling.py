@@ -1,8 +1,8 @@
 def domino_piling():
-    mn = str(input())
-    i = mn.find(' ')
-    m = int(mn[:i])
-    n = int(mn[i+1:])
+    mn = str(input()).split()
+    m = int(mn[0])
+    n = int(mn[1])
+    
     if m % 2 == 0 and n % 2 == 0:
         print(int(m*n/2))
         return

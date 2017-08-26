@@ -1,10 +1,10 @@
 def theatre_square():
-    nma = str(input())
-    space1 = nma.index(' ')
-    n = int(nma[:space1])
-    space2 = nma.index(' ', space1+1)
-    m = int(nma[space1+1:space2])
-    a = int(nma[space2+1:])
+    nma = str(input()).split()
+    nma = [int(i) for i in nma]
+    n = nma[0]
+    m = nma[1]
+    a = nma[2]
+      
     if a > n:
         number_n = 1
     elif n/a == int(n/a):
