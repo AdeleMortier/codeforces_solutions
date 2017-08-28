@@ -4,7 +4,6 @@ def twins():
     coins = sorted([int(i) for i in coins], reverse=True)
     
     total_sum = sum(coins)
-    print(total_sum/2)
     my_sum = 0
     my_coins = 0
     while my_sum <= total_sum/2:
